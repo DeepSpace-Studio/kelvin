@@ -1,0 +1,16 @@
+[package]
+name = "kelvin"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+nalgebra = { version = "0.32", features = ["std"] }
+
+[features]
+default = []
+
+[build-dependencies]
+cbindgen = "0.29.4"
